@@ -3,6 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .row-gap-2 {
+    row-gap: 2rem;
+  }
+
+  .active {
+    background-color: blue;
+  }
+}
+
 :root {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;

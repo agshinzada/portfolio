@@ -1,18 +1,15 @@
 import HeaderBox from "./HeaderBox";
 import WorksBox from "./WorksBox";
 
-function HomePage() {
+function HomePage({ works, setWorks }) {
   return (
     <>
       <HeaderBox
         title="Hi, I’m Agshin"
         slogan="I’m IT specialist currently working at Mazarina"
-        add="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
-        dolor cum, neque quisquam deleniti in sint earum deserunt harum tempore
-        vitae, excepturi debitis minus inventore dolorem reiciendis ad eveniet
-        praesentium!"
+        add="1 ilə yaxındır ki, front-end proqramlaşdırma üzrə araşdırmalar edirəm. Aşağıdakı kateqoriyalar üzrə proyektlərimlə tanış ola bilərsiz."
       />
-      <WorksBox />
+      <WorksBox works={works} setWorks={setWorks} />
     </>
   );
 }

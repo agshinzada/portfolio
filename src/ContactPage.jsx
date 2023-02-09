@@ -24,11 +24,8 @@ function ContactPage() {
   }
   return (
     <>
-      <HeaderBox
-        title="Əlaqə"
-        slogan="I'm available for freelancing. Feel free to contact me."
-      />
-      <div className="flex px-28 py-20 justify-between animate__animated animate__fadeIn">
+      <HeaderBox title="Contact" slogan="Feel free to contact me." />
+      <div className="flex md:flex-row sm:flex-col xl:px-28 xl:py-20 sm:px-6 sm:py-10 md:justify-between animate__animated animate__fadeIn">
         <form className="flex flex-col gap-3 basis-2/3" onSubmit={handleSubmit}>
           <div className="flex gap-3">
             <input
@@ -76,7 +73,7 @@ function ContactPage() {
               ref={messageRef}
             ></textarea>
           </div>
-          <div className="pb-28 mt-2">
+          <div className="md:pb-28 sm:pb-8 mt-2">
             <button
               className="bg-black py-4 px-12 text-white text-xs font-bold rounded-sm hover:bg-gray-700 transition-all mx-auto"
               type="submit"

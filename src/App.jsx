@@ -1,4 +1,5 @@
 import "animate.css";
+import { useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
 import { Link, Route, Routes } from "react-router-dom";
 import AboutPage from "./AboutPage";
@@ -8,17 +9,32 @@ import NotFound from "./NotFound";
 import WorksPage from "./WorksPage";
 
 function App() {
+  const [works, setWorks] = useState([]);
+
+  const fetchWorks = async () => {
+    const res = await fetch("./projects.json");
+    const data = await res.json();
+    setWorks(data);
+  };
+
+  useEffect(() => {
+    try {
+      fetchWorks();
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
   return (
     <div className="animate__animated animate__fadeIn shadow-sm">
-      <div className="min-w-[1200px] bg-white min-h-screen rounded-sm ">
-        <header className="flex items-center justify-between px-28 py-16">
+      <div className="xl:min-w-[1200px] sm:w-full bg-white min-h-screen rounded-sm ">
+        <header className="flex items-center justify-between xl:px-28 xl:py-16 sm:px-6 sm:py-6">
           <div>
-            <Link to="/" className="text-2xl font-bold">
+            <Link to="/" className="xl:text-2xl sm:text-lg font-bold">
               agshin.dev
             </Link>
           </div>
           <nav>
-            <ul className="flex gap-10 font-medium">
+            <ul className="flex gap-10 font-medium xl:text-lg sm:text-sm">
               <li>
                 <Link
                   to={"/about"}
@@ -49,15 +65,21 @@ function App() {
 
         <main>
           <Routes>
-            <Route index element={<HomePage />} />
+            <Route
+              index
+              element={<HomePage works={works} setWorks={setWorks} />}
+            />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/works" element={<WorksPage />} />
+            <Route
+              path="/works"
+              element={<WorksPage works={works} setWorks={setWorks} />}
+            />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </div>
-      <footer className="flex justify-between px-28 py-10">
+      <footer className="flex justify-between xl:px-28 xl:py-16 sm:px-6 sm:py-6">
         <div>
           <p>© {new Date().getFullYear()} agshin.dev</p>
         </div>

@@ -1,14 +1,12 @@
+import { useEffect, useState } from "react";
 import HeaderBox from "./HeaderBox";
 import WorksBox from "./WorksBox";
 
-function WorksPage() {
+function WorksPage({ works, setWorks }) {
   return (
     <>
-      <HeaderBox
-        title="İşlərim"
-        slogan="I'm available for freelancing. Feel free to contact me."
-      />
-      <WorksBox />
+      <HeaderBox title="Works" slogan="Meet my portfolio." />
+      <WorksBox works={works} setWorks={setWorks} />
     </>
   );
 }
