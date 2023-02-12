@@ -90,7 +90,15 @@ function ContactPage() {
           </div>
           <div>
             <h4 className="font-bold">Mobile</h4>
-            <p>(+994) 50 450 87 50</p>
+            <div className="flex items-center gap-2 mt-2">
+              <img src="whatsapp.svg" alt="whatsapp-logo" className="w-8" />
+              <a
+                href="https://api.whatsapp.com/send?phone=994504508750"
+                target={"_blank"}
+              >
+                Whatsapp
+              </a>
+            </div>
           </div>
           <div>
             <h4 className="font-bold">Adres</h4>
