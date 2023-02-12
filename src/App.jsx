@@ -1,5 +1,5 @@
 import "animate.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Toaster } from "react-hot-toast";
 import { Link, Route, Routes } from "react-router-dom";
 import AboutPage from "./AboutPage";
@@ -10,11 +10,23 @@ import WorksPage from "./WorksPage";
 
 function App() {
   const [works, setWorks] = useState([]);
+  const [visibilty, setVisibility] = useState(false);
+  const navRef = useRef();
 
   const fetchWorks = async () => {
     const res = await fetch("./projects.json");
     const data = await res.json();
     setWorks(data);
+  };
+
+  const handleMenu = () => {
+    if (visibilty) {
+      setVisibility(false);
+      navRef.current.classList.add("hidden");
+    } else {
+      setVisibility(true);
+      navRef.current.classList.remove("hidden");
+    }
   };
 
   useEffect(() => {
@@ -26,15 +38,15 @@ function App() {
   }, []);
   return (
     <div className="animate__animated animate__fadeIn shadow-sm">
-      <div className="xl:min-w-[1200px] sm:w-full bg-white min-h-screen rounded-sm ">
-        <header className="flex items-center justify-between xl:px-28 xl:py-16 sm:px-6 sm:py-6">
-          <div>
-            <Link to="/" className="xl:text-2xl sm:text-lg font-bold">
+      <div className="xl:min-w-[1200px] sm:w-full w-full bg-white min-h-screen rounded-sm">
+        <header className="flex flex-col sm:justify-between sm:flex-row xl:px-28 xl:py-16 sm:px-6 sm:py-6 mb-8 sm:mb-0 relative">
+          <div className="mt-5 ml-5 sm:ml-0 sm:mt-0">
+            <Link to="/" className="text-2xl xl:text-2xl sm:text-lg font-bold">
               agshin.dev
             </Link>
           </div>
-          <nav>
-            <ul className="flex gap-10 font-medium xl:text-lg sm:text-sm">
+          <nav className="hidden sm:block" ref={navRef}>
+            <ul className="flex gap-4 pt-8 sm:py-0 items-center  sm:gap-10 sm:flex-row font-medium xl:text-lg sm:text-sm flex-col">
               <li>
                 <Link
                   to={"/about"}
@@ -61,6 +73,12 @@ function App() {
               </li>
             </ul>
           </nav>
+          <div
+            className="border border-gray-200 w-fit p-1 absolute top-3 right-5 sm:hidden cursor-pointer"
+            onClick={handleMenu}
+          >
+            <img src="menu.svg" alt="menu-icon" className="w-10 " />
+          </div>
         </header>
 
         <main>
@@ -79,7 +97,7 @@ function App() {
           </Routes>
         </main>
       </div>
-      <footer className="flex justify-between xl:px-28 xl:py-16 sm:px-6 sm:py-6">
+      <footer className="flex justify-between xl:px-28 xl:py-16 px-6 py-6">
         <div>
           <p>© {new Date().getFullYear()} agshin.dev</p>
         </div>

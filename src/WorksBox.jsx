@@ -21,7 +21,6 @@ function WorksBox({ works, setWorks }) {
   ];
 
   const filterWorks = async (e, name) => {
-    console.log(e);
     try {
       const res = await fetch("./projects.json");
       const data = await res.json();
@@ -35,8 +34,8 @@ function WorksBox({ works, setWorks }) {
 
   return (
     <>
-      <div className="xl:max-w-2xl mx-auto py-10">
-        <ul className="font-medium text-sm flex gap-8 justify-center">
+      <div className="xl:max-w-2xl mx-auto sm:py-10 py-6">
+        <ul className="font-medium text-sm flex flex-col sm:flex-row sm:gap-8 gap-2 items-center sm:justify-center">
           {params.map((f) => (
             <li
               className="hover:opacity-100 opacity-70 transition-opacity cursor-pointer tracking-tighter"
@@ -48,7 +47,7 @@ function WorksBox({ works, setWorks }) {
           ))}
         </ul>
       </div>
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 sm:row-gap-2 xl:px-28 sm:px-6  justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 row-gap-2 sm:row-gap-2 xl:px-28 sm:px-6 justify-items-center">
         {works.map((work) => (
           <div
             className="flex flex-col gap-3 animate__animated animate__fadeInUp"
@@ -72,9 +71,9 @@ function WorksBox({ works, setWorks }) {
           </div>
         ))}
       </div>
-      <div className="md:pt-16 md:pb-28 sm:pb-10 sm:pt-6 flex justify-center">
+      <div className="md:pt-16 md:pb-28 pb-10 pt-6 flex justify-center">
         <button
-          className="bg-black disabled:bg-gray-500 md:py-4 md:px-12 sm:py-3 sm:px-8 text-white text-xs font-bold rounded-full hover:bg-gray-700 transition-all mx-auto"
+          className="bg-black disabled:bg-gray-500 md:py-4 md:px-12 py-3 px-8 text-white text-xs font-bold rounded-full hover:bg-gray-700 transition-all mx-auto"
           disabled
         >
           LOAD MORE
