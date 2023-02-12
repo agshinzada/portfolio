@@ -38,7 +38,7 @@ function App() {
   }, []);
   return (
     <div className="animate__animated animate__fadeIn shadow-sm">
-      <div className="xl:min-w-[1200px] sm:w-full w-full bg-white min-h-screen rounded-sm">
+      <div className="xl:w-[1200px] sm:w-full w-full bg-white min-h-screen rounded-sm">
         <header className="flex flex-col sm:justify-between sm:flex-row xl:px-28 xl:py-16 sm:px-6 sm:py-6 mb-8 sm:mb-0 relative">
           <div className="mt-5 ml-5 sm:ml-0 sm:mt-0">
             <Link to="/" className="text-2xl xl:text-2xl sm:text-lg font-bold">

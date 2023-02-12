@@ -47,7 +47,7 @@ function WorksBox({ works, setWorks }) {
           ))}
         </ul>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 row-gap-2 sm:row-gap-2 xl:px-28 sm:px-6 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 row-gap-2 sm:row-gap-2 xl:px-28 sm:px-6 justify-items-center px-6">
         {works.map((work) => (
           <div
             className="flex flex-col gap-3 animate__animated animate__fadeInUp"
@@ -57,7 +57,7 @@ function WorksBox({ works, setWorks }) {
               <a href={work.link} target="_blank">
                 <img
                   src={work.image}
-                  className="w-64 rounded-sm hover:scale-95 transition-all"
+                  className="md:w-72 w-full sm:w-80 rounded-sm hover:scale-95 transition-all"
                 />
               </a>
             </div>
