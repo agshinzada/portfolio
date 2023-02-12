@@ -97,7 +97,7 @@ function App() {
           </Routes>
         </main>
       </div>
-      <footer className="flex justify-between xl:px-28 xl:py-16 px-6 py-6">
+      <footer className="flex justify-between xl:px-28 xl:py-10 px-6 py-6">
         <div>
           <p>© {new Date().getFullYear()} agshin.dev</p>
         </div>
