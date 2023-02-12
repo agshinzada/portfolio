@@ -20,7 +20,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "set \"GENERATE_SOURCEMAP=false\" && vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
