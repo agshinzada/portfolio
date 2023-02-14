@@ -5,7 +5,7 @@
         "category": "React",
         "paragraph": "Using Redux and Tailwind CSS",
         "description": "Çalışdığım Mazarina şirkəti üçün hazırladığım stock idarə veb aplikasiyasıdır. Həmçinin burada şirkətin servislərlə olan alış sənədləri,məbləğləri işlənilir. Hesabatlar izlənilir.",
-        "link": "https://github.com/agshinzada/inventory-mng",
+        "link": "https://github.com/agshinzada/inventory-mng-demo",
         "image": "/work-logo-1.png",
         "order": 1
     },
@@ -15,7 +15,7 @@
         "category": "React",
         "paragraph": "Using Tailwind CSS and Ant Design",
         "description": "Çalışdığım Mazarina şirkəti üçün hazırladığım erp bazaya inteqrasiya olunmuş müştəri yaratma veb aplikasiyasıdır. Sistemin müştəri algoritmasına uyğun kod yaradılır və məlumatlar əlavə edilməsi təmin edilir.",
-        "link": "https://github.com/agshinzada/new-client",
+        "link": "https://github.com/agshinzada/new-client-demo",
         "image": "/work-logo-2.png",
         "order": 2
     },
