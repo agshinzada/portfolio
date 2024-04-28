@@ -1,24 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap");
-:root {
-  font-family: "Roboto Slab", serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: black;
-  background-color: #f1edea;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@layer utilities {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#header {
+  background-image: url("./assets/background.webp");
+}
+
+@media only screen and (max-width: 1180px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  #header {
+    background-image: url("./assets/mobilebg.webp");
+  }
+}
+
+@media only screen and (min-width: 890px) {
+  #header {
+    background-image: url("./assets/background.webp");
+  }
 }
