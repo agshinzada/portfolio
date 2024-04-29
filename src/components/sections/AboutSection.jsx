@@ -10,11 +10,11 @@ const AboutSection = () => {
     >
       <div className="container text-white ">
         <div className="flex gap-3 mobile:flex-col laptop:flex-row">
-          <div className="pt-28 pb-12 pr-10 border-r border-[#242323] mobile:border-r-0 laptop:border-r mobile:pr-0 laptop:pr-10">
+          <div className="pt-28 pb-12 pr-10 border-r border-[#242323] mobile:border-r-0 laptop:border-r mobile:pr-0 laptop:pr-10 ">
             <img
               src={profile}
               alt="profile"
-              className="min-w-[20rem] mobile:w-[10rem] mobile:mr-auto mobile:ml-auto"
+              className="mobile:max-w-[20rem] laptop:max-w-[50rem] w-full mobile:mr-auto mobile:ml-auto"
             />
           </div>
           <div className="relative">
@@ -30,8 +30,9 @@ const AboutSection = () => {
             </div>
             <div className="px-10 pt-1 bg-main-dark-slate mobile:mb-5">
               <ul className="py-10">
-                <li className="flex gap-10 mobile:gap-5 laptop:gap-10">
-                  <span>Email</span> : agshinzada@gmail.com
+                <li className="flex gap-10 laptop:flex-row mobile:flex-col mobile:gap-5 laptop:gap-10 mobile:text-sm laptop:text-md text-md">
+                  <span>Email:</span>
+                  <span>agshinzada@gmail.com</span>
                 </li>
               </ul>
             </div>

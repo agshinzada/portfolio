@@ -8,10 +8,10 @@ const ResumeSection = () => {
   return (
     <section className="after:content-[''] after:w-full after:bg-[#242323] after:h-[1px] after:block">
       <div className="flex container mobile:flex-col laptop:flex-row">
-        <div className="relative min-w-[22.6rem] border-r border-[#242323]">
+        <div className="relative pr-[13.8rem] border-r border-[#242323]">
           <SectionNavInfo number={"03"} name={"resume"} />
           <div className="text-white font-bold pt-12 mt-10 mobile:hidden laptop:block relative h-full">
-            <ul className="flex flex-col gap-3 sticky top-[110px]">
+            <ul className="flex flex-col text-nowrap gap-3 sticky top-[110px]">
               <li>
                 <a href="#work">İş təcrübəsi</a>
               </li>

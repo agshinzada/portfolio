@@ -8,7 +8,7 @@ export default {
       body: ['"Poppins"'],
     },
     screens: {
-      mobile: "400px",
+      mobile: "200px",
       // => @media (min-width: 640px) { ... }
 
       laptop: "890px",

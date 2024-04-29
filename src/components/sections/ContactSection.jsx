@@ -19,11 +19,11 @@ const ContactSection = () => {
             <ContactForm />
           </div>
         </div>
-        <div className="pl-10 w-1/3 border-l border-[#242323] pt-20 mobile:w-full mobile:border-l-0 laptop:w-1/3 laptop:border-l">
-          <div className="pb-12 pr-10 flex justify-center">
+        <div className="pl-10 mobile:pl-0 laptop:pl-10 w-1/3 border-l border-[#242323] pt-20 mobile:w-full mobile:border-l-0 laptop:w-1/3 laptop:border-l">
+          <div className="pb-12 pr-10 mobile:pr-0 laptop:pr-10 flex justify-center">
             <img src={profile} alt="profile" className="w-[12rem]" />
           </div>
-          <ul className="text-white">
+          <ul className="text-white mobile:text-sm laptop:text-md text-md">
             <li className="flex gap-3 items-center border-b border-[#242323] py-3">
               <img src={emailIcon} alt="email-icon" className="w-8" />
               <span>agshinzada@gmail.com</span>

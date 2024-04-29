@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <Header position={position} />
-      <main className="relative z-20 bg-main-dark min-h-screen" id="main">
+      <main className="relative z-20 bg-main-dark" id="main">
         <AboutSection />
         <ResumeSection />
         <ButtonSection />
