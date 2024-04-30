@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import reactIcon from "../../assets/skills/react.svg";
 import jsIcon from "../../assets/skills/javascript.svg";
 import cssIcon from "../../assets/skills/css.svg";
@@ -8,9 +8,21 @@ import expressIcon from "../../assets/skills/express.svg";
 import bootstrapIcon from "../../assets/skills/bootstrap.svg";
 import antIcon from "../../assets/skills/ant.svg";
 import tailwind from "../../assets/skills/tailwind.svg";
+import { useInView } from "framer-motion";
 const SkillBox = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <ul className="flex gap-8 flex-wrap mobile:justify-center">
+    <ul
+      className="flex gap-8 flex-wrap mobile:justify-center"
+      style={{
+        transform: isInView ? "none" : "translateY(150px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all ease 2s",
+      }}
+      ref={ref}
+    >
       <li className="flex flex-col items-center gap-2">
         <img
           src={reactIcon}

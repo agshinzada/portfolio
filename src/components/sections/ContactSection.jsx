@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import SectionTitle from "../utils/SectionTitle";
 import emailIcon from "../../assets/email.svg";
 import locationIcon from "../../assets/location.svg";
@@ -7,11 +7,22 @@ import SectionNavInfo from "../utils/SectionNavInfo";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ContactForm from "../Form/ContactForm";
+import { useInView, motion } from "framer-motion";
 
 const ContactSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <section id="contact">
-      <div className="relative container flex mb-28 mobile:flex-col laptop:flex-row">
+      <motion.div
+        className="relative container flex mb-28 mobile:flex-col laptop:flex-row"
+        style={{
+          transform: isInView ? "none" : "translateY(150px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all ease 2s",
+        }}
+        ref={ref}
+      >
         <SectionNavInfo number={"06"} name={"contact"} />
         <div className="w-full pr-12 mobile:pr-0 laptop:pr-12">
           <SectionTitle name={"Əlaqə"} />
@@ -34,7 +45,7 @@ const ContactSection = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
       <ToastContainer
         position="top-right"
         autoClose={5000}

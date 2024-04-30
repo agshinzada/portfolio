@@ -7,6 +7,7 @@ import PortfolioSection from "./components/sections/PortfolioSection";
 import BlogSection from "./components/sections/BlogSection";
 import ContactSection from "./components/sections/ContactSection";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/utils/ScrollToTop";
 
 function App() {
   const [position, setPosition] = useState("absolute bottom-0");
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <>
+      <ScrollToTop />
       <Header position={position} />
       <main className="relative z-20 bg-main-dark" id="main">
         <AboutSection />

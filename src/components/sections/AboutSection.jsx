@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
 import profile from "../../assets/profile.webp";
 import SectionNavInfo from "../utils/SectionNavInfo";
+import { motion, spring, useInView, useScroll } from "framer-motion";
 
 const AboutSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section
       className="after:content-[''] after:w-full after:bg-[#242323] after:h-[1px] after:block"
       id="about"
     >
-      <div className="container text-white ">
+      <motion.div
+        ref={ref}
+        className="container text-white"
+        style={{
+          transform: isInView ? "none" : "translateY(150px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all ease 2s",
+        }}
+      >
         <div className="flex gap-3 mobile:flex-col laptop:flex-row">
           <div className="pt-28 pb-12 pr-10 border-r border-[#242323] mobile:border-r-0 laptop:border-r mobile:pr-0 laptop:pr-10 ">
             <img
@@ -38,7 +50,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

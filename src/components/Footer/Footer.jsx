@@ -4,7 +4,7 @@ import footerBg from "../../assets/footer-bg.webp";
 const Footer = () => {
   return (
     <footer
-      className="bg-cover text-white border-t border-[#242323]"
+      className="bg-cover text-white border-t border-[#242323] relative z-40"
       style={{ backgroundImage: `url(${footerBg})` }}
     >
       <div className="container py-8 mobile:py-8 laptop:py-8 mobile:flex-col mobile:gap-5 laptop:flex-row flex justify-between">

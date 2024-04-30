@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
 import ResumeItem from "../utils/ResumeItem";
 import SectionTitle from "../utils/SectionTitle";
 import SkillBox from "../utils/SkillBox";
 import SectionNavInfo from "../utils/SectionNavInfo";
+import { useInView, motion } from "framer-motion";
 
 const ResumeSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section className="after:content-[''] after:w-full after:bg-[#242323] after:h-[1px] after:block">
       <div className="flex container mobile:flex-col laptop:flex-row">
         <div className="relative pr-[13.8rem] border-r border-[#242323]">
           <SectionNavInfo number={"03"} name={"resume"} />
           <div className="text-white font-bold pt-12 mt-10 mobile:hidden laptop:block relative h-full">
-            <ul className="flex flex-col text-nowrap gap-3 sticky top-[110px]">
+            <motion.ul
+              className="flex flex-col text-nowrap gap-3 sticky top-[110px]"
+              style={{
+                transform: isInView ? "none" : "translateX(-150px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all ease 2s",
+              }}
+              ref={ref}
+            >
               <li>
                 <a href="#work">İş təcrübəsi</a>
               </li>
@@ -21,13 +33,23 @@ const ResumeSection = () => {
               <li>
                 <a href="#skills">Bacarıqlar</a>
               </li>
-            </ul>
+            </motion.ul>
           </div>
         </div>
         <div className="text-white px-12 mobile:px-0 laptop:px-12 w-full">
           <div id="work">
             <SectionTitle name={"İş təcrübəsi"} />
             <ul>
+              <li>
+                <ResumeItem
+                  date={"2023 - Present"}
+                  name={"Frontend developer"}
+                  location={"Freelance"}
+                  description={
+                    "Freelance olaraq frontend development üzrə çalışmalar edirəm."
+                  }
+                />
+              </li>
               <li>
                 <ResumeItem
                   date={"2021 - Present"}

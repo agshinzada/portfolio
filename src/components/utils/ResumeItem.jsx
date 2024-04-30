@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
 import calendar from "../../assets/calendar.svg";
+import { motion, useInView } from "framer-motion";
 
 const ResumeItem = ({ date, name, location, description }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="pb-10 mb-4 border-b border-[#242323]">
+    <motion.div
+      ref={ref}
+      className="pb-10 mb-4 border-b border-[#242323]"
+      style={{
+        transform: isInView ? "none" : "translateY(150px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all ease 2s",
+      }}
+    >
       <div className="flex gap-3 items-center mb-3">
         <img src={calendar} alt="calendar" className="w-8" />
         <span>{date}</span>
@@ -15,7 +27,7 @@ const ResumeItem = ({ date, name, location, description }) => {
           <p className="text-sm">{description}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

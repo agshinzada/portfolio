@@ -1,7 +1,19 @@
-import React from "react";
+import { useInView, motion } from "framer-motion";
+import React, { useRef } from "react";
 const PortfolioItem = ({ status, tags, name, image, url }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="text-white w-full relative ">
+    <motion.div
+      className="text-white w-full relative "
+      style={{
+        transform: isInView ? "none" : "translateY(150px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all ease 2s",
+      }}
+      ref={ref}
+    >
       <img
         src={image}
         alt="project-image"
@@ -18,7 +30,7 @@ const PortfolioItem = ({ status, tags, name, image, url }) => {
         <p className="text-xs text-main-green">{tags}</p>
         <p className="font-bold text-lg">{name}</p>
       </a>
-    </div>
+    </motion.div>
   );
 };
 
