@@ -45,3 +45,7 @@ body {
     background-image: url("./assets/background.webp");
   }
 }
+
+.Toastify__toast-container .Toastify__toast {
+  margin-top: 4rem;
+}

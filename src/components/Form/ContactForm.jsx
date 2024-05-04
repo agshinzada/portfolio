@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "@formspree/react";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("mzbngjyd");
