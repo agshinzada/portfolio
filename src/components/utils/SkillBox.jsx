@@ -8,6 +8,9 @@ import expressIcon from "../../assets/skills/express.svg";
 import bootstrapIcon from "../../assets/skills/bootstrap.svg";
 import antIcon from "../../assets/skills/ant.svg";
 import tailwind from "../../assets/skills/tailwind.svg";
+import nextjsIcon from "../../assets/skills/nextjs.svg";
+import typeIcon from "../../assets/skills/typescript.svg";
+import sassIcon from "../../assets/skills/sass.svg";
 import { useInView } from "framer-motion";
 const SkillBox = () => {
   const ref = useRef(null);
@@ -41,11 +44,19 @@ const SkillBox = () => {
       </li>
       <li className="flex flex-col items-center gap-2">
         <img
-          src={cssIcon}
+          src={nextjsIcon}
           alt="react-icon"
           className="w-16 mobile:w-10 laptop:w-16"
         />
-        <span>CSS</span>
+        <span>NextJS</span>
+      </li>
+      <li className="flex flex-col items-center gap-2">
+        <img
+          src={typeIcon}
+          alt="react-icon"
+          className="w-16 mobile:w-10 laptop:w-16"
+        />
+        <span>Typescript</span>
       </li>
       <li className="flex flex-col items-center gap-2">
         <img
@@ -55,6 +66,23 @@ const SkillBox = () => {
         />
         <span>HTML</span>
       </li>
+      <li className="flex flex-col items-center gap-2">
+        <img
+          src={cssIcon}
+          alt="react-icon"
+          className="w-16 mobile:w-10 laptop:w-16"
+        />
+        <span>CSS</span>
+      </li>
+      <li className="flex flex-col items-center gap-2">
+        <img
+          src={sassIcon}
+          alt="react-icon"
+          className="w-16 mobile:w-10 laptop:w-16"
+        />
+        <span>SASS</span>
+      </li>
+
       <li className="flex flex-col items-center gap-2">
         <img
           src={nodeIcon}

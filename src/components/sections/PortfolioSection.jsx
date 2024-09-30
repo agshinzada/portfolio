@@ -2,6 +2,8 @@ import React from "react";
 import PortfolioItem from "../utils/PortfolioItem";
 import SectionTitle from "../utils/SectionTitle";
 import SectionNavInfo from "../utils/SectionNavInfo";
+import pr6 from "../../assets/portfolio/project6.webp";
+import pr5 from "../../assets/portfolio/project5.webp";
 import pr4 from "../../assets/portfolio/project4.webp";
 import pr3 from "../../assets/portfolio/project3.webp";
 import pr2 from "../../assets/portfolio/project2.webp";
@@ -19,6 +21,15 @@ const PortfolioSection = () => {
         <ul className="flex flex-wrap gap-6 mb-16">
           <li>
             <PortfolioItem
+              name={"Gemstone.az"}
+              tags={"React, Node.js, Ant Design, Tailwind CSS"}
+              status={"working"}
+              image={pr5}
+              url={"https://gemstone.az/"}
+            />
+          </li>
+          <li>
+            <PortfolioItem
               name={"Nicheceramic.az"}
               tags={"React, Node.js, Ant Design"}
               status={"working"}
@@ -28,9 +39,20 @@ const PortfolioSection = () => {
           </li>
           <li>
             <PortfolioItem
-              name={"Archive web app"}
+              name={"SYS manage"}
               tags={"React, Node.js, Ant Design"}
               status={"working"}
+              image={pr6}
+              url={
+                "https://www.linkedin.com/posts/agshinzada_project-javascript-react-activity-7242958971597131777-wy5W?utm_source=share&utm_medium=member_desktop"
+              }
+            />
+          </li>
+          <li>
+            <PortfolioItem
+              name={"Archive web app"}
+              tags={"React, Node.js, Ant Design"}
+              status={"completed"}
               image={pr3}
               url={
                 "https://www.linkedin.com/posts/agshinzada_javascript-react-nodejs-activity-7188500652430434306-Wc0g?utm_source=share&utm_medium=member_desktop"

@@ -36,7 +36,7 @@ const Header = ({ position }) => {
               animate={{ opacity: 1 }}
               transition={{ duration: 3 }}
             >
-              Aqşin İsmayılzadə
+              Agshin Ismayilzada
             </motion.h1>
             <TypeAnimation
               sequence={[

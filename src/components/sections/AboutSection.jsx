@@ -34,10 +34,11 @@ const AboutSection = () => {
             <div className="pt-28 px-10 mb-10 mobile:px-0 laptop:px-10">
               <h2 className="mb-6 text-2xl font-bold">Salam,</h2>
               <p>
-                Hal-hazırda Mazarina LLC-də İT mütəxəssis olaraq çalışıram.
+                Hal-hazırda Mazarina LLC-də ERP administrator olaraq çalışıram.
                 Freelance olaraq front-end development üzrə çalışmalar edirəm.
-                Bir neçə proyektləri bitirmişəm. Bunla bağlı proyektlər
-                bölməsindən tanış ola bilərsiz.
+                Çalışdığım şirkət üçün ERP inteqrasiyalı web application-lar
+                proqramlamışam. Həmçinin 2 e-commerce layihənin müəllifiyəm.
+                Daha ətraflı proyektlər bölməsinə nəzər yetirin.
               </p>
             </div>
             <div className="px-10 pt-1 bg-main-dark-slate mobile:mb-5">

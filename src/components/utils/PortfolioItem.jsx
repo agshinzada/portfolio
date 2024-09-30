@@ -6,7 +6,7 @@ const PortfolioItem = ({ status, tags, name, image, url }) => {
 
   return (
     <motion.div
-      className="text-white w-full relative "
+      className="text-white w-full relative h-full"
       style={{
         transform: isInView ? "none" : "translateY(150px)",
         opacity: isInView ? 1 : 0,
@@ -17,7 +17,7 @@ const PortfolioItem = ({ status, tags, name, image, url }) => {
       <img
         src={image}
         alt="project-image"
-        className="max-w-96 w-[23rem] laptop:w-[22rem] rounded-md mobile:w-full mobile:max-w-full laptop:max-w-96"
+        className="max-w-96 w-[23rem] laptop:w-[22rem] h-full rounded-md mobile:w-full mobile:max-w-full laptop:max-w-96"
       />
       <div className="absolute py-1 px-3 top-2 left-2 bg-main-green rounded-lg text-xs">
         <p className="uppercase">{status}</p>

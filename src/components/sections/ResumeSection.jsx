@@ -52,21 +52,11 @@ const ResumeSection = () => {
               </li>
               <li>
                 <ResumeItem
-                  date={"2021 - Present"}
-                  name={"IT mütəxəssis"}
+                  date={"2024 - Present"}
+                  name={"ERP administrator"}
                   location={"Mazarina Trade Company"}
                   description={
-                    "Şirkət cihazlarına texniki dəstək, şəbəkə avadanlıqlarının qoşulması və sazlanması, ERP baza əməliyyatları"
-                  }
-                />
-              </li>
-              <li>
-                <ResumeItem
-                  date={"2021 - 2021"}
-                  name={"Helpdesk təcrübə proqramı"}
-                  location={"Mazarina Trade Company"}
-                  description={
-                    "Helpdesk üzrə 3 aylıq təcrübə proqramında iştirak etmişəm."
+                    "ERP baza əməliyyatları, LOGO erp proqram təminatı üzrə əməliyyatlar"
                   }
                 />
               </li>
