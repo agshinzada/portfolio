@@ -2,50 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 2rem;
-  }
+:root {
+  font-family: "Lato", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-}
-body {
-  overflow-x: hidden;
-}
-
-#header {
-  background-image: url("./assets/background.webp");
-}
-
-/* @media only screen and (max-width: 1180px) {
-  .container {
-    
-  }
-} */
-
-@media only screen and (min-width: 200px) {
-  #header {
-    background-image: url("./assets/mobilebg.webp");
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .container {
-    padding: 0 1.5rem;
-  }
-}
-
-@media only screen and (min-width: 890px) {
-  #header {
-    background-image: url("./assets/background.webp");
-  }
-}
-
-.Toastify__toast-container .Toastify__toast {
-  margin-top: 4rem;
 }

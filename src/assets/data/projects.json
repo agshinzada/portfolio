@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "name": "Agshin.dev - Portfolio",
+        "summary": "Agshin.dev is my personal portfolio showcasing my skills and web development projects. It highlights my work in creating dynamic, user-friendly websites and applications, providing visitors with an insight into my experience and expertise in front-end development.",
+        "skills": "React, NodeJS, Tailwind CSS",
+        "status": "completed",
+        "link": "https://agshin.dev/",
+        "repo": "https://github.com/agshinzada/portfolio",
+        "cover": "https://api.nicheceramic.az/test-images/project1.webp",
+        "img1": "",
+        "img2": "",
+        "url": "agshindev"
+    },
+    {
+        "id": 2,
+        "name": "Inventory Management",
+        "summary": "Inventory Management is the first project I developed. It is used for the registration of internal IT devices within the company. It tracks the overall movement of these devices, manages service costs, and allows operations to be monitored through a dashboard.",
+        "skills": "React, NodeJS, Tailwind CSS",
+        "status": "completed",
+        "link": false,
+        "repo": false,
+        "cover": "https://api.nicheceramic.az/test-images/project1.webp",
+        "img1": "",
+        "img2": "",
+        "url": "inventory-manage"
+    },
+    {
+        "id": 3,
+        "name": "Client Management",
+        "summary": "Client Management is used to create new clients for the database and edit existing client information. Client codes are dynamically generated, and various duplication tests are performed during the addition process to ensure that the client codes are unique.",
+        "skills": "React, NodeJS, Ant Design",
+        "status": "completed",
+        "link": false,
+        "repo": false,
+        "cover": "https://api.nicheceramic.az/test-images/project2.webp",
+        "img1": "",
+        "img2": "",
+        "url": "client-manage"
+    },
+    {
+        "id": 4,
+        "name": "Archive web app",
+        "summary": "Archive App is used to archive electronic versions of documents used in the ERP database. It allows users to upload these documents in various formats. Additionally, I have developed a service for automatic scanning of documents.",
+        "skills": "React, NodeJS, Ant Design",
+        "status": "completed",
+        "link": false,
+        "repo": false,
+        "cover": "https://api.nicheceramic.az/test-images/project3.webp",
+        "img1": "",
+        "img2": "",
+        "url": "archive-app"
+    },
+    {
+        "id": 5,
+        "name": "SYS manage",
+        "summary": "SYS Manage is an ERP system management project designed to streamline the administration of orders, payments, database operations, and other ERP modules. The project includes comprehensive admin panels for managing and overseeing my other ERP projects, ensuring smooth operations and efficient control of business processes.",
+        "skills": "React, NodeJS, Ant Design",
+        "status": "working",
+        "link": false,
+        "repo": false,
+        "cover": "https://api.nicheceramic.az/test-images/project4.webp",
+        "img1": "",
+        "img2": "",
+        "url": "sys-manage"
+    },
+    {
+        "id": 6,
+        "name": "Nicheceramic.az",
+        "summary": "Nicheceramic.az is an online platform showcasing handcrafted ceramic pieces. The website allows users to explore and purchase unique ceramic artworks, while also providing detailed product information and secure payment options.",
+        "skills": "React, NodeJS, Ant Design",
+        "status": "working",
+        "link": "https://nicheceramic.az/",
+        "repo": false,
+        "cover": "https://api.nicheceramic.az/test-images/project5.webp",
+        "img1": "",
+        "img2": "",
+        "url": "nicheceramic"
+    },
+    {
+        "id": 7,
+        "name": "Gemstone.az",
+        "summary": "Gemstone.az is an online platform showcasing accessories made with precious gemstones. The website allows users to easily explore and purchase these accessories, while also providing detailed product information and secure payment options.",
+        "skills": "React, NodeJS, Ant Design, Tailwind CSS",
+        "status": "working",
+        "link": "https://gemstone.az/",
+        "repo": false,
+        "cover": "https://api.nicheceramic.az/test-images/project6.webp",
+        "img1": "",
+        "img2": "",
+        "url": "gemstone"
+    }
+]
