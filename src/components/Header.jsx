@@ -15,6 +15,7 @@ const Header = () => {
         console.error("Copy error: ", err);
       });
   }
+
   return (
     <div className="flex justify-between items-center">
       <div className="flex gap-2 items-center">
@@ -36,12 +37,13 @@ const Header = () => {
             Email
           </a>
         </div>
-        <button
+        <a
           className="bg-white text-xs font-semibold px-8 py-3 md:px-10 md:py-4 rounded-full z-10"
-          type="button"
+          href="/cv.pdf"
+          download={"cv-agshin.pdf"}
         >
           CV
-        </button>
+        </a>
       </div>
       <Link to={"/"} className="cursor-pointer z-10 relative">
         <img src={logo} alt="logo" className="w-24 md:w-28" />

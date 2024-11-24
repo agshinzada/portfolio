@@ -22,7 +22,7 @@ const ProjectDetailPage = () => {
             {project.name}
           </h4>
         </div>{" "}
-        <p className="text-gray-500 max-w-[1000px] text-sm">
+        <p className="text-gray-500 max-w-[1000px] text-sm md:text-[16px]">
           {project.summary}
         </p>
         <div className="flex items-start md:items-end flex-col gap-2">
@@ -69,22 +69,13 @@ const ProjectDetailPage = () => {
       <div className="px-6 md:px-20 py-2">
         <div className="grid grid-cols-4 gap-3">
           <div className="col-span-4">
-            <img
-              src="https://api.nicheceramic.az/test-images/project1.webp"
-              alt="img1"
-            />
+            <img src="/images/project5.webp" alt="img1" />
           </div>
           <div className="col-span-2 row-start-2 h-fit">
-            <img
-              src="https://api.nicheceramic.az/test-images/project1.webp"
-              alt="img1"
-            />
+            <img src="/images/project5.webp" alt="img1" />
           </div>
           <div className="col-span-2 col-start-3 row-start-2 h-fit">
-            <img
-              src="https://api.nicheceramic.az/test-images/project1.webp"
-              alt="img1"
-            />
+            <img src="/images/project5.webp" alt="img1" />
           </div>
         </div>
       </div>

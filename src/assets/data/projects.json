@@ -7,7 +7,7 @@
         "status": "completed",
         "link": "https://agshin.dev/",
         "repo": "https://github.com/agshinzada/portfolio",
-        "cover": "https://api.nicheceramic.az/test-images/project1.webp",
+        "cover": "/images/project1.webp",
         "img1": "",
         "img2": "",
         "url": "agshindev"
@@ -20,7 +20,7 @@
         "status": "completed",
         "link": false,
         "repo": false,
-        "cover": "https://api.nicheceramic.az/test-images/project1.webp",
+        "cover": "/images/project1.webp",
         "img1": "",
         "img2": "",
         "url": "inventory-manage"
@@ -33,7 +33,7 @@
         "status": "completed",
         "link": false,
         "repo": false,
-        "cover": "https://api.nicheceramic.az/test-images/project2.webp",
+        "cover": "/images/project2.webp",
         "img1": "",
         "img2": "",
         "url": "client-manage"
@@ -46,7 +46,7 @@
         "status": "completed",
         "link": false,
         "repo": false,
-        "cover": "https://api.nicheceramic.az/test-images/project3.webp",
+        "cover": "/images/project3.webp",
         "img1": "",
         "img2": "",
         "url": "archive-app"
@@ -59,7 +59,7 @@
         "status": "working",
         "link": false,
         "repo": false,
-        "cover": "https://api.nicheceramic.az/test-images/project4.webp",
+        "cover": "/images/project6.webp",
         "img1": "",
         "img2": "",
         "url": "sys-manage"
@@ -72,7 +72,7 @@
         "status": "working",
         "link": "https://nicheceramic.az/",
         "repo": false,
-        "cover": "https://api.nicheceramic.az/test-images/project5.webp",
+        "cover": "/images/project4.webp",
         "img1": "",
         "img2": "",
         "url": "nicheceramic"
@@ -85,7 +85,7 @@
         "status": "working",
         "link": "https://gemstone.az/",
         "repo": false,
-        "cover": "https://api.nicheceramic.az/test-images/project6.webp",
+        "cover": "/images/project5.webp",
         "img1": "",
         "img2": "",
         "url": "gemstone"
