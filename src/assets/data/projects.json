@@ -7,10 +7,11 @@
         "status": "completed",
         "link": "https://agshin.dev/",
         "repo": "https://github.com/agshinzada/portfolio",
-        "cover": "/images/project1.webp",
-        "img1": "",
-        "img2": "",
-        "url": "agshindev"
+        "cover": "/images/dev-cover.webp",
+        "img1": "/images/dev-1.webp",
+        "img2": "/images/dev-2.webp",
+        "url": "agshindev",
+        "sort": 8
     },
     {
         "id": 2,
@@ -20,10 +21,11 @@
         "status": "completed",
         "link": false,
         "repo": false,
-        "cover": "/images/project1.webp",
-        "img1": "",
-        "img2": "",
-        "url": "inventory-manage"
+        "cover": "/images/inventory-cover.webp",
+        "img1": "/images/inventory-1.webp",
+        "img2": "/images/inventory-2.webp",
+        "url": "inventory-manage",
+        "sort": 9
     },
     {
         "id": 3,
@@ -33,10 +35,11 @@
         "status": "completed",
         "link": false,
         "repo": false,
-        "cover": "/images/project2.webp",
-        "img1": "",
-        "img2": "",
-        "url": "client-manage"
+        "cover": "/images/client-cover.webp",
+        "img1": "/images/client-1.webp",
+        "img2": "/images/client-2.webp",
+        "url": "client-manage",
+        "sort": 6
     },
     {
         "id": 4,
@@ -46,10 +49,11 @@
         "status": "completed",
         "link": false,
         "repo": false,
-        "cover": "/images/project3.webp",
-        "img1": "",
-        "img2": "",
-        "url": "archive-app"
+        "cover": "/images/archive-cover.webp",
+        "img1": "/images/archive-1.webp",
+        "img2": "/images/archive-2.webp",
+        "url": "archive-app",
+        "sort": 4
     },
     {
         "id": 5,
@@ -59,10 +63,11 @@
         "status": "working",
         "link": false,
         "repo": false,
-        "cover": "/images/project6.webp",
-        "img1": "",
-        "img2": "",
-        "url": "sys-manage"
+        "cover": "/images/sys-cover.webp",
+        "img1": "/images/sys-1.webp",
+        "img2": "/images/sys-2.webp",
+        "url": "sys-manage",
+        "sort": 3
     },
     {
         "id": 6,
@@ -72,10 +77,11 @@
         "status": "working",
         "link": "https://nicheceramic.az/",
         "repo": false,
-        "cover": "/images/project4.webp",
-        "img1": "",
-        "img2": "",
-        "url": "nicheceramic"
+        "cover": "/images/niche-cover.webp",
+        "img1": "/images/niche-1.webp",
+        "img2": "/images/niche-2.webp",
+        "url": "nicheceramic",
+        "sort": 1
     },
     {
         "id": 7,
@@ -85,9 +91,38 @@
         "status": "working",
         "link": "https://gemstone.az/",
         "repo": false,
-        "cover": "/images/project5.webp",
-        "img1": "",
-        "img2": "",
-        "url": "gemstone"
+        "cover": "/images/gemstone-cover.webp",
+        "img1": "/images/gemstone-1.webp",
+        "img2": "/images/gemstone-2.webp",
+        "url": "gemstone",
+        "sort": 2
+    },
+    {
+        "id": 8,
+        "name": "Transport Reporting",
+        "summary": "Transport Reporting is a project that provides an overview of a company's vehicle expenses. It allows users to generate reports in both visual formats and downloadable file formats.",
+        "skills": "React, NodeJS, Tailwind CSS, Ant Design",
+        "status": "completed",
+        "link": false,
+        "repo": false,
+        "cover": "/images/transport-cover.webp",
+        "img1": "/images/transport-1.webp",
+        "img2": "/images/transport-2.webp",
+        "url": "transport-report",
+        "sort": 7
+    },
+    {
+        "id": 9,
+        "name": "Order PDF to EXCEL",
+        "summary": "Order PDF to Excel is a project that converts order forms received in PDF format from stores into Excel files compatible with the ERP system.",
+        "skills": "React, NodeJS, Tailwind CSS",
+        "status": "completed",
+        "link": false,
+        "repo": false,
+        "cover": "/images/convert-cover.webp",
+        "img1": "/images/convert-1.webp",
+        "img2": "/images/convert-2.webp",
+        "url": "pdftoexcel",
+        "sort": 5
     }
 ]

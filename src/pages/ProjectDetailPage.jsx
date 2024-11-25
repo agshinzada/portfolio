@@ -69,13 +69,13 @@ const ProjectDetailPage = () => {
       <div className="px-6 md:px-20 py-2">
         <div className="grid grid-cols-4 gap-3">
           <div className="col-span-4">
-            <img src="/images/project5.webp" alt="img1" />
+            <img src={project.cover} alt="img1" />
           </div>
           <div className="col-span-2 row-start-2 h-fit">
-            <img src="/images/project5.webp" alt="img1" />
+            <img src={project.img1} alt="img1" />
           </div>
           <div className="col-span-2 col-start-3 row-start-2 h-fit">
-            <img src="/images/project5.webp" alt="img1" />
+            <img src={project.img2} alt="img1" />
           </div>
         </div>
       </div>
