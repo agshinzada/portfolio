@@ -1,5 +1,6 @@
 import logo from "assets/logo-black.svg";
 import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -43,6 +44,14 @@ const Header = () => {
           download={"cv-agshin.pdf"}
         >
           CV
+        </a>
+        <a
+          className="bg-white text-xs font-semibold px-8 py-3 hidden md:flex md:px-10 md:py-4 rounded-full z-10"
+          href="https://api.whatsapp.com/send/?phone=994703504750&text=Salam"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaWhatsapp className="text-lg text-black" />
         </a>
       </div>
       <Link to={"/"} className="cursor-pointer z-10 relative">

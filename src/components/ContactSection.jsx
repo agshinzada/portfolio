@@ -1,4 +1,5 @@
 import agree from "assets/agree.svg";
+import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
 const ContactSection = () => {
@@ -18,12 +19,20 @@ const ContactSection = () => {
           Tell me about your next <br /> project
         </h2>
       </div>
-      <div className="flex">
+      <div className="flex gap-2 flex-wrap">
         <a
           href="mailto:agshinzada@gmail.com"
           className="bg-black text-white text-xs font-semibold px-8 py-4 rounded-full z-10 flex gap-2 items-center"
         >
           <MdOutlineEmail className="text-lg text-white" /> Email Me
+        </a>
+        <a
+          href="https://api.whatsapp.com/send/?phone=994703504750&text=Salam"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-[#25D366] text-white text-xs font-semibold px-8 py-4 rounded-full z-10 flex gap-2 items-center"
+        >
+          <FaWhatsapp className="text-lg text-white" /> Whatsapp
         </a>
       </div>
     </div>
