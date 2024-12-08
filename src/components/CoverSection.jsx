@@ -1,4 +1,4 @@
-import profile from "assets/profile.png";
+import profile from "assets/profile.jpg";
 import { motion } from "framer-motion";
 import { RxExternalLink } from "react-icons/rx";
 import { TiSocialLinkedin, TiSocialFacebook } from "react-icons/ti";
@@ -6,11 +6,15 @@ import { FaGithub, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const CoverSection = () => {
   return (
-    <div className="flex flex-col items-center gap-6 px-2 pt-24 pb-20">
+    <div className="flex flex-col items-center gap-6 px-2 pt-20 md:pt-24 pb-20">
       <div className="flex relative">
-        <img src={profile} alt="profile" className="z-10 w-28 md:w-32" />
+        <img
+          src={profile}
+          alt="profile"
+          className="z-10 w-36 md:w-44 rounded-full border-4 border-white"
+        />
         <motion.div
-          className="flex gap-1 text-xs rounded-full px-3 md:px-6 py-4 bg-white z-10 h-fit -rotate-[8deg] absolute shadow-sm left-[90px] md:left-[105px] top-4 text-nowrap tracking-tight md:tracking-normal"
+          className="flex gap-1 text-xs rounded-full px-3 md:px-6 py-4 bg-white z-10 h-fit -rotate-[8deg] absolute shadow-sm left-[100px] md:left-[125px] top-4 text-nowrap tracking-tight md:tracking-normal"
           initial={{
             rotate: -8,
           }}
