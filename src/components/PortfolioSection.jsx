@@ -5,7 +5,7 @@ const PortfolioSection = ({ slice = true }) => {
   return (
     <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {projects
-        .sort((a, b) => a.sort - b.sort)
+        .sort((a, b) => b.sort - a.sort)
         .slice(0, slice ? 6 : projects.length) // Eğer slice gerekiyorsa ilk 6 eleman
         .map((item) => (
           <li key={item.id}>

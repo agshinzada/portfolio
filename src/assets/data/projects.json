@@ -11,7 +11,7 @@
         "img1": "/images/dev-1.webp",
         "img2": "/images/dev-2.webp",
         "url": "agshindev",
-        "sort": 8
+        "sort": 2
     },
     {
         "id": 2,
@@ -25,7 +25,7 @@
         "img1": "/images/inventory-1.webp",
         "img2": "/images/inventory-2.webp",
         "url": "inventory-manage",
-        "sort": 9
+        "sort": 1
     },
     {
         "id": 3,
@@ -39,7 +39,7 @@
         "img1": "/images/client-1.webp",
         "img2": "/images/client-2.webp",
         "url": "client-manage",
-        "sort": 6
+        "sort": 4
     },
     {
         "id": 4,
@@ -53,7 +53,7 @@
         "img1": "/images/archive-1.webp",
         "img2": "/images/archive-2.webp",
         "url": "archive-app",
-        "sort": 4
+        "sort": 6
     },
     {
         "id": 5,
@@ -67,35 +67,35 @@
         "img1": "/images/sys-1.webp",
         "img2": "/images/sys-2.webp",
         "url": "sys-manage",
-        "sort": 3
+        "sort": 7
     },
     {
         "id": 6,
         "name": "Nicheceramic.az",
         "summary": "Nicheceramic.az is an online platform showcasing handcrafted ceramic pieces. The website allows users to explore and purchase unique ceramic artworks, while also providing detailed product information and secure payment options.",
         "skills": "React, NodeJS, Ant Design",
-        "status": "working",
+        "status": "completed",
         "link": "https://nicheceramic.az/",
         "repo": false,
         "cover": "/images/niche-cover.webp",
         "img1": "/images/niche-1.webp",
         "img2": "/images/niche-2.webp",
         "url": "nicheceramic",
-        "sort": 1
+        "sort": 9
     },
     {
         "id": 7,
         "name": "Gemstone.az",
         "summary": "Gemstone.az is an online platform showcasing accessories made with precious gemstones. The website allows users to easily explore and purchase these accessories, while also providing detailed product information and secure payment options.",
         "skills": "React, NodeJS, Ant Design, Tailwind CSS",
-        "status": "working",
+        "status": "completed",
         "link": "https://gemstone.az/",
         "repo": false,
         "cover": "/images/gemstone-cover.webp",
         "img1": "/images/gemstone-1.webp",
         "img2": "/images/gemstone-2.webp",
         "url": "gemstone",
-        "sort": 2
+        "sort": 8
     },
     {
         "id": 8,
@@ -109,7 +109,7 @@
         "img1": "/images/transport-1.webp",
         "img2": "/images/transport-2.webp",
         "url": "transport-report",
-        "sort": 7
+        "sort": 3
     },
     {
         "id": 9,
@@ -124,5 +124,19 @@
         "img2": "/images/convert-2.webp",
         "url": "pdftoexcel",
         "sort": 5
+    },
+    {
+        "id": 10,
+        "name": "Technote.az - Clone",
+        "summary": "This project is a clone of the popular Azerbaijani tech news website Technote.az (https://technote.az). It is built using modern web development technologies, utilizing dummy data to replicate the design and functionality of the original site.",
+        "skills": "React, Typescript, Tailwind CSS",
+        "status": "completed",
+        "link": "https://technote-clone-chi.vercel.app/",
+        "repo": "https://github.com/agshinzada/technote-clone",
+        "cover": "/images/technote-cover.webp",
+        "img1": "/images/technote-1.webp",
+        "img2": "/images/technote-2.webp",
+        "url": "technote",
+        "sort": 10
     }
 ]
