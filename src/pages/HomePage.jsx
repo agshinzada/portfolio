@@ -44,7 +44,7 @@ const HomePage = () => {
           <SectionTitleItem title={"EXPERIENCE"} />
           <ExperienceSection />
         </section>
-        <section className="bg-[#F4F4F2] px-6 pb-20 md:px-10">
+        <section className="bg-[#F4F4F2] px-6 pb-20 pt-10 md:px-10">
           <ContactSection />
         </section>
       </div>

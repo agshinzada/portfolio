@@ -19,7 +19,7 @@ const CoverSection = () => {
             rotate: -8,
           }}
           animate={{
-            y: ["0%", "50%"],
+            y: ["20%", "80%"],
             rotate: -8,
           }}
           transition={{
