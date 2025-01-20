@@ -31,21 +31,21 @@ const Header = () => {
             <h4>agshinzada@gmail.com</h4>
           </div>
           <button
-            className="bg-[#252525] dark:bg-fourdDarkColor hidden md:block text-white md:text-black md:bg-white text-xs font-semibold px-8 py-3 md:px-10 md:py-4 rounded-full z-10 transition-colors duration-500"
+            className="bg-[#252525] dark:bg-fourdDarkColor dark:text-primaryDarkColor hidden md:block text-white md:text-black md:bg-white text-xs font-semibold px-8 py-3 md:px-10 md:py-4 rounded-full z-10 transition-colors duration-500"
             type="button"
             onClick={handleCopy}
           >
             {copyText}
           </button>
           <a
-            className="bg-[#252525] dark:bg-fourdDarkColor md:hidden text-white md:text-black md:bg-white text-xs font-semibold px-8 py-3 md:px-10 md:py-4 rounded-full z-10 transition-colors duration-500"
+            className="bg-[#252525] dark:bg-fourdDarkColor dark:text-primaryDarkColor md:hidden text-white md:text-black md:bg-white text-xs font-semibold px-8 py-3 md:px-10 md:py-4 rounded-full z-10 transition-colors duration-500"
             href="mailto:agshinzada@gmail.com"
           >
             Email
           </a>
         </div>
         <a
-          className="bg-white dark:bg-fourdDarkColor text-xs font-semibold px-8 py-3 md:px-10 md:py-4 rounded-full z-10 transition-colors duration-500"
+          className="bg-white dark:bg-fourdDarkColor dark:text-primaryDarkColor text-xs font-semibold px-8 py-3 md:px-10 md:py-4 rounded-full z-10 transition-colors duration-500"
           href="/cv.pdf"
           download={"cv-agshin.pdf"}
         >
