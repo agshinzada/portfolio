@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="px-6 py-5 md:px-20 md:py-10 bg-[#fcfcfc] flex justify-between">
+    <div className="px-6 py-5 md:px-20 md:py-10 bg-[#fcfcfc] dark:bg-primaryDarkColor flex justify-between dark:text-fourdDarkColor">
       <div className="text-xs md:text-sm">
         <p>© {new Date().getFullYear()} All rights reserved.</p>
       </div>

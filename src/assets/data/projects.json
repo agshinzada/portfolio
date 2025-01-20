@@ -128,7 +128,7 @@
     {
         "id": 10,
         "name": "Technote.az - Clone",
-        "summary": "This project is a clone of the popular Azerbaijani tech news website Technote.az (https://technote.az). It is built using modern web development technologies, utilizing dummy data to replicate the design and functionality of the original site.",
+        "summary": "This project is a clone of the popular Azerbaijani tech news website Technote.az (https://technote.az). It is built using modern web development technologies, utilizing static data to replicate the design and functionality of the original site.",
         "skills": "React, Typescript, Tailwind CSS",
         "status": "completed",
         "link": "https://technote-clone-chi.vercel.app/",
@@ -142,7 +142,7 @@
     {
         "id": 11,
         "name": "Tamkart.az - Clone",
-        "summary": "This project is a clone of the popular bank card service website Tamkart.az (https://tamkart.az). It is developed using modern web development technologies and aims to replicate the original site's design and core functionality using dummy data.",
+        "summary": "This project is a clone of the popular bank card service website Tamkart.az (https://tamkart.az). It is developed using modern web development technologies and aims to replicate the original site's design and core functionality using static data.",
         "skills": "React, Typescript, Tailwind CSS",
         "status": "completed",
         "link": "https://tamkart-clone.vercel.app/",

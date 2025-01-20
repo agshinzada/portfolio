@@ -6,7 +6,7 @@ import Footer from "components/Footer";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="dark:bg-primaryDarkColor transition-colors duration-500">
       <div className="w-full relative overflow-hidden px-4 md:px-6 lg:px-14 py-10 flex flex-col">
         <motion.div
           className="bg-[url('assets/bg-cover.png')] opacity-[0.05] -inset-[200%] w-[400%] h-[400%] absolute"

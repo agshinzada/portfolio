@@ -26,10 +26,11 @@ const SkillSection = () => {
     speed: 5000,
     autoplaySpeed: 1000,
     cssEase: "linear",
+    arrows: false,
   };
   return (
     // <div className="border z-10 flex">
-    <div className="py-10 md:px-3 overflow-hidden z-10 slider-container border-b border">
+    <div className="py-10 md:px-3 overflow-hidden z-10 slider-container border-b border dark:border-secondaryDarkColor">
       <Slider {...settings} className="">
         <SkillItem img={jsIcon} title={false} />
         <SkillItem img={reactIcon} title={false} />

@@ -11,22 +11,22 @@ const ProjectDetailPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-[#fcfcfc]">
+    <div className="bg-[#fcfcfc] dark:bg-primaryDarkColor transition-colors duration-500 dark:border-t-secondaryDarkColor dark:border-t">
       <ScrollToTop />
       <div className="px-6 md:px-20 py-10 flex flex-col gap-6">
         <div className="flex gap-4 items-center">
           <button onClick={() => navigate(-1)}>
-            <IoArrowBackCircle className="text-5xl" />
+            <IoArrowBackCircle className="text-5xl dark:text-thirdDarkColor" />
           </button>
-          <h4 className="text-[30px] md:text-[48px] font-bold">
+          <h4 className="text-[30px] md:text-[48px] font-bold dark:text-fourdDarkColor">
             {project.name}
           </h4>
         </div>{" "}
-        <p className="text-gray-500 max-w-[1000px] text-sm md:text-[16px]">
+        <p className="text-gray-500 max-w-[1000px] text-sm md:text-[16px] dark:text-thirdDarkColor">
           {project.summary}
         </p>
         <div className="flex items-start md:items-end flex-col gap-2">
-          <h4 className="text-sm font-semibold">
+          <h4 className="text-sm font-semibold dark:text-fourdDarkColor">
             Technologies Used:{" "}
             <span className="font-medium">{project.skills}</span>
           </h4>
@@ -36,7 +36,7 @@ const ProjectDetailPage = () => {
                 href={project.link}
                 target="_blank"
                 rel={"noreferrer"}
-                className="flex gap-1 items-center text-sm"
+                className="flex gap-1 items-center text-sm dark:text-thirdDarkColor"
               >
                 <RxExternalLink className="text-lg" />
                 <span>Visit website</span>
@@ -49,14 +49,14 @@ const ProjectDetailPage = () => {
                 href={project.repo}
                 target="_blank"
                 rel={"noreferrer"}
-                className="flex gap-1 items-center text-sm"
+                className="flex gap-1 items-center text-sm dark:text-thirdDarkColor"
               >
                 <FaGithub className="text-lg" />
                 <span>Public source</span>
               </a>
             ) : (
               <button
-                className="flex gap-1 items-center disabled:opacity-60 text-sm"
+                className="flex gap-1 items-center disabled:opacity-60 text-sm dark:text-fourdDarkColor"
                 disabled={true}
               >
                 <FaGithub className="text-lg" />

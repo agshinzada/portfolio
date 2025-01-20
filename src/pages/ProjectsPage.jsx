@@ -6,15 +6,17 @@ const ProjectsPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-[#fcfcfc]">
+    <div className="bg-[#fcfcfc] dark:bg-primaryDarkColor transition-colors duration-500 dark:border-t-secondaryDarkColor dark:border-t">
       <div className="px-6 md:px-20 py-10 flex flex-col gap-2">
         <div className="flex gap-4 items-center">
           <button onClick={() => navigate(-1)}>
-            <IoArrowBackCircle className="text-5xl" />
+            <IoArrowBackCircle className="text-5xl dark:text-thirdDarkColor" />
           </button>{" "}
-          <h4 className="text-[46px] md:text-[52px] font-bold">Projects</h4>
+          <h4 className="text-[46px] md:text-[52px] font-bold dark:text-fourdDarkColor">
+            Projects
+          </h4>
         </div>
-        <p className="text-gray-500 text-sm md:text-[16px]">
+        <p className="text-gray-500 text-sm md:text-[16px] dark:text-fourdDarkColor">
           Below, you can discover the e-commerce platforms and ERP web
           applications I have developed, showcasing my expertise in creating{" "}
           <br />

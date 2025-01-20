@@ -26,25 +26,25 @@ const HomePage = () => {
         ></motion.div>
         <CoverSection />
         <SkillSection />
-        <section className="bg-[#F4F4F2] px-6 pt-24 md:px-10 pb-1 flex flex-col gap-20">
+        <section className="bg-[#F4F4F2] dark:bg-primaryDarkColor px-6 pt-24 md:px-10 pb-1 flex flex-col gap-20 transition-colors duration-500">
           <SectionTitleItem title={"PROJECTS"} />
           <div className="flex flex-col gap-6">
             <PortfolioSection />
             <div className="flex justify-center">
               <Link
                 to={"projects"}
-                className="bg-black text-white text-xs font-semibold px-8 py-4 rounded-full z-10 flex gap-2 items-center w-fit"
+                className="bg-black dark:bg-thirdDarkColor dark:text-black text-white text-xs font-semibold px-8 py-4 rounded-full z-10 flex gap-2 items-center w-fit transition-colors duration-500"
               >
                 See more <RxExternalLink className="text-lg" />
               </Link>
             </div>
           </div>
         </section>
-        <section className="bg-[#F4F4F2] p-6 pt-24 md:px-10">
+        <section className="bg-[#F4F4F2] dark:bg-primaryDarkColor p-6 pt-24 md:px-10 transition-colors duration-500">
           <SectionTitleItem title={"EXPERIENCE"} />
           <ExperienceSection />
         </section>
-        <section className="bg-[#F4F4F2] px-6 pb-20 pt-10 md:px-10">
+        <section className="bg-[#F4F4F2] dark:bg-primaryDarkColor px-6 pb-20 pt-10 md:px-10 transition-colors duration-500">
           <ContactSection />
         </section>
       </div>

@@ -11,10 +11,10 @@ const CoverSection = () => {
         <img
           src={profile}
           alt="profile"
-          className="z-10 w-36 md:w-44 rounded-full border-4 border-white"
+          className="z-10 w-36 md:w-44 rounded-full border-4 border-white dark:border-fourdDarkColor transition-colors duration-500"
         />
         <motion.div
-          className="flex gap-1 text-xs rounded-full px-3 md:px-6 py-4 bg-white z-10 h-fit -rotate-[8deg] absolute shadow-sm left-[100px] md:left-[125px] top-4 text-nowrap tracking-tight md:tracking-normal"
+          className="flex gap-1 text-xs rounded-full px-3 md:px-6 py-4 bg-white dark:bg-fourdDarkColor transition-colors duration-500 z-10 h-fit -rotate-[8deg] absolute shadow-sm left-[100px] md:left-[125px] top-4 text-nowrap tracking-tight md:tracking-normal"
           initial={{
             rotate: -8,
           }}
@@ -39,7 +39,7 @@ const CoverSection = () => {
             backgroundImage:
               "linear-gradient(97.0286deg, rgb(11, 11, 11) 0%, rgba(12, 12, 12, 0.55) 100%, rgba(12, 12, 12, 0.55) 100%)",
           }}
-          className="text-[36px] md:text-[56px] text-center font-bold bg-clip-text text-transparent leading-tight tracking-tight"
+          className="text-[36px] md:text-[56px] text-center font-bold bg-clip-text text-transparent leading-tight tracking-tight dark:text-fourdDarkColor transition-colors duration-500"
         >
           Transforming ideas into <br />
           interactive digital experiences.
@@ -49,7 +49,7 @@ const CoverSection = () => {
         <a
           href="https://www.linkedin.com/in/agshinzada/"
           target="_blank"
-          className="bg-black z-10 block rounded-full p-2"
+          className="bg-black dark:bg-primaryDarkColor z-10 block rounded-full p-2 transition-colors duration-500"
           rel={"noreferrer"}
         >
           <TiSocialLinkedin className="text-[20px] text-white" />
@@ -57,7 +57,7 @@ const CoverSection = () => {
         <a
           href="https://github.com/agshinzada"
           target="_blank"
-          className="bg-black z-10 block rounded-full p-2"
+          className="bg-black dark:bg-primaryDarkColor z-10 block rounded-full p-2 transition-colors duration-500"
           rel={"noreferrer"}
         >
           <FaGithub className="text-[20px] text-white" />
@@ -65,7 +65,7 @@ const CoverSection = () => {
         <a
           href="https://www.instagram.com/agshin.dev/"
           target="_blank"
-          className="bg-black z-10 block rounded-full p-2"
+          className="bg-black dark:bg-primaryDarkColor z-10 block rounded-full p-2 transition-colors duration-500"
           rel={"noreferrer"}
         >
           <FaInstagram className="text-[20px] text-white" />
@@ -73,7 +73,7 @@ const CoverSection = () => {
         <a
           href="https://www.facebook.com/agshinzada/"
           target="_blank"
-          className="bg-black z-10 block rounded-full p-2"
+          className="bg-black dark:bg-primaryDarkColor z-10 block rounded-full p-2 transition-colors duration-500"
           rel={"noreferrer"}
         >
           <TiSocialFacebook className="text-[20px] text-white" />
@@ -82,7 +82,7 @@ const CoverSection = () => {
       <div className="flex">
         <Link
           to={"projects"}
-          className="bg-black text-white text-xs font-semibold px-6 py-5 md:px-10 md:py-6 rounded-full z-10 flex gap-2 items-center"
+          className="bg-black dark:bg-thirdDarkColor dark:text-black transition-colors duration-500 text-white text-xs font-semibold px-6 py-5 md:px-10 md:py-6 rounded-full z-10 flex gap-2 items-center"
         >
           Latest Projects <RxExternalLink className="text-lg" />
         </Link>

@@ -9,3 +9,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.cls-2 {
+  clip-path: url(#clip-path);
+}

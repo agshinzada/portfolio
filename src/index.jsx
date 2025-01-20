@@ -9,6 +9,7 @@ import ProjectsPage from "pages/ProjectsPage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProjectDetailPage from "pages/ProjectDetailPage";
+import "@theme-toggles/react/css/Around.css";
 
 const router = createBrowserRouter([
   {
