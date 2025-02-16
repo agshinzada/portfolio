@@ -73,15 +73,15 @@
         "id": 6,
         "name": "Nicheceramic.az",
         "summary": "Nicheceramic.az is an online platform showcasing handcrafted ceramic pieces. The website allows users to explore and purchase unique ceramic artworks, while also providing detailed product information and secure payment options.",
-        "skills": "React, NodeJS, Ant Design",
-        "status": "completed",
+        "skills": "React, Tailwind CSS, NodeJS, Ant Design, Swiper JS",
+        "status": "updated",
         "link": "https://nicheceramic.az/",
         "repo": false,
         "cover": "/images/niche-cover.webp",
         "img1": "/images/niche-1.webp",
         "img2": "/images/niche-2.webp",
         "url": "nicheceramic",
-        "sort": 9
+        "sort": 12
     },
     {
         "id": 7,
@@ -143,7 +143,7 @@
         "id": 11,
         "name": "Tamkart.az - Clone",
         "summary": "This project is a clone of the popular bank card service website Tamkart.az (https://tamkart.az). It is developed using modern web development technologies and aims to replicate the original site's design and core functionality using static data.",
-        "skills": "React, Typescript, Tailwind CSS",
+        "skills": "React, Typescript, Tailwind CSS, Motion",
         "status": "completed",
         "link": "https://tamkart-clone.vercel.app/",
         "repo": "https://github.com/agshinzada/tamkart-clone",

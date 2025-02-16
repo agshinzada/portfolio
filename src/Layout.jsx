@@ -11,13 +11,13 @@ const Layout = () => {
         <motion.div
           className="bg-[url('assets/bg-cover.png')] opacity-[0.05] -inset-[200%] w-[400%] h-[400%] absolute"
           animate={{
-            x: ["0%", "20%", "0%", "-20%", "0%"], // X ekseninde ileri-geri hareket
-            y: ["0%", "20%", "0%", "-20%", "0%"], // Y ekseninde yukarı-aşağı hareket
+            x: ["0%", "20%", "0%", "-20%", "0%"],
+            y: ["0%", "20%", "0%", "-20%", "0%"],
           }}
           transition={{
-            duration: 0.5, // Hızlı bir hareket için kısa süre
-            repeat: Infinity, // Sonsuz döngü
-            repeatType: "mirror", // Hareketin simetrik olması için
+            duration: 0.5,
+            repeat: Infinity,
+            repeatType: "mirror",
           }}
         ></motion.div>
         <Header />
