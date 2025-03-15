@@ -72,10 +72,10 @@ const ProjectDetailPage = () => {
             <img src={project.cover} alt="img1" />
           </div>
           <div className="col-span-2 row-start-2 h-fit">
-            <img src={project.img1} alt="img1" />
+            {project.img1 ? <img src={project.img1} alt="img1" /> : ""}
           </div>
           <div className="col-span-2 col-start-3 row-start-2 h-fit">
-            <img src={project.img2} alt="img1" />
+            {project.img2 ? <img src={project.img2} alt="img2" /> : ""}
           </div>
         </div>
       </div>
