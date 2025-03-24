@@ -60,7 +60,7 @@
         "name": "SYS manage",
         "summary": "SYS Manage is an ERP system management project designed to streamline the administration of orders, payments, database operations, and other ERP modules. The project includes comprehensive admin panels for managing and overseeing my other ERP projects, ensuring smooth operations and efficient control of business processes.",
         "skills": "React, NodeJS, Ant Design",
-        "status": "working",
+        "status": "completed",
         "link": false,
         "repo": false,
         "cover": "/images/sys-cover.webp",
