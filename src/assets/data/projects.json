@@ -158,12 +158,12 @@
         "name": "Kinometraj.az",
         "summary": "Kinometraj is an online encyclopedia dedicated to Azerbaijani cinema. It provides detailed information about local films, directors, actors, and cinematic history. The platform serves as a comprehensive archive, offering insights into the evolution of Azerbaijani film culture.",
         "skills": "Next.js, React, Typescript, Tailwind CSS, Supabase",
-        "status": "coming soon",
+        "status": "working",
         "link": "https://kinometraj.az",
         "repo": false,
         "cover": "/images/kinometraj-cover.webp",
-        "img1": false,
-        "img2": false,
+        "img1": "/images/kinometraj-1.webp",
+        "img2": "/images/kinometraj-2.webp",
         "url": "kinometraj",
         "sort": 13
     }
