@@ -1,13 +1,12 @@
-import { ReactSVG } from "react-svg";
-
 const SkillItem = ({ img, title }) => {
   return (
     <div className="w-full z-10">
-      <ReactSVG
+      <img
         src={img}
-        className="w-24 dark:fill-thirdDarkColor fill-[#2e2e2e]"
+        className="w-20 dark:fill-thirdDarkColor fill-[#2e2e2e]"
+        alt="title"
       />
-      <h3>{title}</h3>
+      {/* <h3>{title}</h3> */}
     </div>
   );
 };

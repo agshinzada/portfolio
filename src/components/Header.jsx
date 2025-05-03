@@ -46,7 +46,7 @@ const Header = () => {
         </div>
         <a
           className="bg-white dark:bg-fourdDarkColor dark:text-primaryDarkColor text-xs font-semibold px-8 py-3 md:px-10 md:py-4 rounded-full z-10 transition-colors duration-500"
-          href="/Agshin-Ismayilzada.pdf"
+          href="https://tqvgatbdxqewsovfeztw.supabase.co/storage/v1/object/public/project-images//Agshin-Ismayilzada.pdf"
           download={"Agshin-Ismayilzada.pdf"}
         >
           CV
