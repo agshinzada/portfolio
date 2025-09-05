@@ -72,7 +72,7 @@ const ProjectsPage = () => {
             <ul className="grid grid-cols-1 lg:grid-cols-2 gap-2">
               {otherProjects.map((item) => (
                 <li key={item.id}>
-                  <div className="border py-3 px-4 rounded-lg flex md:flex-row flex-col gap-2 md:justify-between md:items-center bg-white dark:bg-fourdDarkColor">
+                  <div className="border py-3 px-4 rounded-lg flex md:flex-row flex-col gap-2 h-full md:justify-between md:items-center bg-white dark:bg-fourdDarkColor">
                     <div>
                       <h5 className="font-semibold text-lg">{item.title}</h5>
                       <p className="text-xs md:text-sm text-gray-500 mb-2">
