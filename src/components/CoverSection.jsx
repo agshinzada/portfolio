@@ -1,4 +1,4 @@
-import profile from "assets/profile.jpg";
+import profile from "assets/profile.png";
 import { motion } from "framer-motion";
 import { RxExternalLink } from "react-icons/rx";
 import { TiSocialLinkedin, TiSocialFacebook } from "react-icons/ti";
@@ -11,7 +11,7 @@ const CoverSection = () => {
         <img
           src={profile}
           alt="profile"
-          className="z-10 w-36 md:w-44 rounded-full border-4 border-white dark:border-fourdDarkColor transition-colors duration-500"
+          className="z-10 w-36 md:w-44 rounded-full border-4 border-blue-300 dark:border-fourdDarkColor transition-colors duration-500"
         />
         <motion.div
           className="flex gap-1 text-xs rounded-full px-3 md:px-6 py-4 bg-white dark:bg-fourdDarkColor transition-colors duration-500 z-10 h-fit -rotate-[8deg] absolute shadow-sm left-[100px] md:left-[125px] top-4 text-nowrap tracking-tight md:tracking-normal"
