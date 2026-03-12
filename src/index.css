@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Lato", sans-serif;
+  font-family: "Google Sans", sans-serif;
 }
 
 html {
@@ -13,3 +13,5 @@ html {
 .cls-2 {
   clip-path: url(#clip-path);
 }
+
+/* [#05CC05] */
