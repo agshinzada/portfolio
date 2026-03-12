@@ -9,24 +9,23 @@ const ProjectDetail = () => {
   const [loading, setLoading] = useState(false);
   const { slug } = useParams();
 
-  const getData = async () => {
-    setLoading(true);
-    const { data, error } = await supabase
-      .from(process.env.REACT_APP_PROJECTS)
-      .select("*")
-      .eq("slug", slug);
-    if (error) {
-      console.log(error);
-      setLoading(false);
-      return;
-    }
-    setProjectDetail(data[0]);
-    setLoading(false);
-  };
-
   useEffect(() => {
+    const getData = async () => {
+      setLoading(true);
+      const { data, error } = await supabase
+        .from(process.env.REACT_APP_PROJECTS)
+        .select("*")
+        .eq("slug", slug);
+      if (error) {
+        console.log(error);
+        setLoading(false);
+        return;
+      }
+      setProjectDetail(data[0]);
+      setLoading(false);
+    };
     getData();
-  }, []);
+  }, [slug]);
 
   if (loading) {
     return <Loader />;
