@@ -5,11 +5,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout";
 import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/HomePage";
-import ProjectsPage from "pages/ProjectsPage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProjectDetailPage from "pages/ProjectDetailPage";
 import "@theme-toggles/react/css/Around.css";
+import ProjectDetail from "pages/ProjectDetail";
+import Projects from "pages/Projects";
+import Contact from "pages/Contact";
+import Resume from "pages/Resume";
+import NotFound from "pages/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -23,13 +26,25 @@ const router = createBrowserRouter([
       },
       {
         path: "/projects",
-        element: <ProjectsPage />,
+        element: <Projects />,
       },
       {
-        path: "/projects/:url",
-        element: <ProjectDetailPage />,
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/resume",
+        element: <Resume />,
+      },
+      {
+        path: "/projects/:slug",
+        element: <ProjectDetail />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
@@ -37,5 +52,5 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
