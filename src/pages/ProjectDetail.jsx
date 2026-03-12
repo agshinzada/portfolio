@@ -3,6 +3,8 @@ import { CheckCircle2, ExternalLink, Github, Info, Layout } from "lucide-react";
 import { supabase } from "utils/supabase";
 import { useParams } from "react-router-dom";
 import Loader from "components/Loader";
+import NoPreviewPlaceholder from "components/NoPreviewPlaceholder";
+import ImagePendingPlaceholder from "components/ImagePendingPlaceholder";
 
 const ProjectDetail = () => {
   const [projectDetail, setProjectDetail] = useState(null);
@@ -30,6 +32,7 @@ const ProjectDetail = () => {
   if (loading) {
     return <Loader />;
   }
+
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-zinc-900 dark:text-slate-100 text-slate-900 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto space-y-12">
@@ -143,22 +146,27 @@ const ProjectDetail = () => {
               Screenshots
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {projectDetail?.screenshots.map((src, index) => (
-                <div
-                  key={index}
-                  className="group relative rounded-xl overflow-hidden border border-slate-200 dark:border-zinc-800 shadow-sm bg-white dark:bg-zinc-950"
-                >
-                  <img
-                    src={src}
-                    alt={`${projectDetail?.title} screenshot ${index + 1}`}
-                    className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-                </div>
-              ))}
+              {projectDetail?.screenshots.length &&
+                !projectDetail.is_service &&
+                projectDetail?.screenshots.map((src, index) => (
+                  <div
+                    key={index}
+                    className="group relative rounded-xl overflow-hidden border border-slate-200 dark:border-zinc-800 shadow-sm bg-white dark:bg-zinc-950"
+                  >
+                    <img
+                      src={src}
+                      alt={`${projectDetail?.title} screenshot ${index + 1}`}
+                      className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                  </div>
+                ))}
             </div>
           </section>
         )}
+        {projectDetail?.is_service && <NoPreviewPlaceholder />}
+        {projectDetail?.screenshots?.length === 0 &&
+          !projectDetail?.is_service && <ImagePendingPlaceholder />}
       </div>
     </div>
   );
