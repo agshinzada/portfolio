@@ -1,13 +1,5 @@
 import React, { useRef } from "react";
-import {
-  Mail,
-  MessageCircle,
-  MapPin,
-  Github,
-  Linkedin,
-  Send,
-  Instagram,
-} from "lucide-react";
+import { Mail, MapPin, Github, Linkedin, Send, Instagram } from "lucide-react";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
@@ -83,23 +75,6 @@ const Contact = () => {
                     </p>
                   </div>
                 </a>
-
-                {/* <a
-                  href="https://wa.me/994703504750"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 group"
-                >
-                  <div className="w-12 h-12 bg-slate-50 dark:bg-zinc-900 flex items-center justify-center rounded-xl group-hover:bg-green-50 group-hover:text-green-600 transition-colors text-slate-500">
-                    <MessageCircle size={24} />
-                  </div>
-                  <div>
-                    <p className="text-lg font-semibold text-slate-800 dark:text-slate-200">
-                      WhatsApp
-                    </p>
-                  </div>
-                </a> */}
-
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-slate-50 dark:bg-zinc-900 flex items-center justify-center rounded-xl text-slate-500">
                     <MapPin size={24} />
