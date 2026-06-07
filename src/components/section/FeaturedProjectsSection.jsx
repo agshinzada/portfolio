@@ -147,7 +147,7 @@ const FeaturedProjectsSection = () => {
                 </div>
 
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
-                  {project.description}
+                  {project.summary}
                 </p>
 
                 <div className="flex flex-wrap gap-2 pt-6 border-t border-slate-100 dark:border-zinc-800">
