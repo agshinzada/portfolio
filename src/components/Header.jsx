@@ -91,7 +91,7 @@ export const Header = () => {
               <span>{isCopied ? "Copied!" : "Email"}</span>
             </button>
 
-            <a
+            {/* <a
               href="https://wa.me/994703504750"
               target="_blank"
               rel="noopener noreferrer"
@@ -99,7 +99,7 @@ export const Header = () => {
               title="WhatsApp"
             >
               <MdWhatsapp size={18} />
-            </a>
+            </a> */}
 
             <button
               onClick={() => handleTheme()}
