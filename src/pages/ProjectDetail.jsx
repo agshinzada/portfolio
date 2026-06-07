@@ -48,7 +48,7 @@ const ProjectDetail = () => {
                 </span>
               </div>
               <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl">
-                {projectDetail?.description}
+                {projectDetail?.summary}
               </p>
             </div>
 
