@@ -10,7 +10,6 @@ import {
   Mail,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { MdWhatsapp } from "react-icons/md";
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -90,17 +89,6 @@ export const Header = () => {
               )}
               <span>{isCopied ? "Copied!" : "Email"}</span>
             </button>
-
-            {/* <a
-              href="https://wa.me/994703504750"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-md hover:bg-emerald-50 text-slate-500 hover:text-emerald-600 transition-colors dark:text-slate-100 dark:hover:text-slate-100 dark:hover:bg-zinc-800"
-              title="WhatsApp"
-            >
-              <MdWhatsapp size={18} />
-            </a> */}
-
             <button
               onClick={() => handleTheme()}
               className="p-2 rounded-md hover:bg-slate-100 text-slate-500 hover:text-slate-900 transition-colors  dark:text-slate-100 dark:hover:text-slate-100 dark:hover:bg-zinc-800"
