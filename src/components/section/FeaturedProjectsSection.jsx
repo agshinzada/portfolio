@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { ArrowRight, ExternalLink, Github, FolderKanban } from "lucide-react";
+import {
+  ArrowRight,
+  ExternalLink,
+  Github,
+  FolderKanban,
+  Cpu,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import { supabase } from "utils/supabase";
 import { Link } from "react-router-dom";
@@ -39,7 +45,9 @@ const FeaturedProjectsSection = () => {
     const { data, error } = await supabase
       .from(process.env.REACT_APP_PROJECTS)
       .select("*")
-      .eq("is_featured", true);
+      .eq("is_featured", true)
+      .eq("is_active", true)
+      .order("order_index", { ascending: false });
     if (error) {
       console.log(error);
       setLoading(false);
@@ -102,11 +110,27 @@ const FeaturedProjectsSection = () => {
               className="group flex flex-col bg-white dark:bg-zinc-950 dark:border-zinc-800 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-300"
             >
               <div className="relative h-56 overflow-hidden bg-slate-100 dark:bg-zinc-900">
-                <img
-                  src={project.image_url}
-                  alt={project.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
-                />
+                {project.is_service ? (
+                  <div className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center relative overflow-hidden">
+                    <div className="absolute inset-0 opacity-10 font-mono text-[10px] text-white p-4 leading-tight">
+                      {`const sync = async () => {\n  const data = await db.fetch();\n  return process(data);\n}`}
+                    </div>
+                    <div className="relative z-10 flex flex-col items-center gap-2">
+                      <div className="p-4 bg-slate-700/50 rounded-2xl border border-slate-600 backdrop-blur-sm">
+                        <Cpu className="text-indigo-400" size={32} />
+                      </div>
+                      <span className="text-xs font-mono text-slate-400 uppercase tracking-widest">
+                        API / Service
+                      </span>
+                    </div>
+                  </div>
+                ) : (
+                  <img
+                    src={project.image_url}
+                    alt={project.title}
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
+                  />
+                )}
 
                 {(project.github_url || project.live_url) && (
                   <div className="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 backdrop-blur-sm">
@@ -147,18 +171,23 @@ const FeaturedProjectsSection = () => {
                 </div>
 
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
-                  {project.summary}
+                  {project.summary.length > 150
+                    ? project.summary.substring(0, 147) + "..."
+                    : project.summary}
                 </p>
 
                 <div className="flex flex-wrap gap-2 pt-6 border-t border-slate-100 dark:border-zinc-800">
-                  {project.technologies.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="px-2.5 py-1 bg-slate-50 dark:bg-zinc-900 dark:text-slate-400 text-slate-600 border border-slate-200 dark:border-zinc-800 text-xs font-medium rounded-md hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors cursor-default"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                  {project.technologies.map(
+                    (tech, index) =>
+                      index < 4 && (
+                        <span
+                          key={index}
+                          className="px-2.5 py-1 bg-slate-50 dark:bg-zinc-900 dark:text-slate-400 text-slate-600 border border-slate-200 dark:border-zinc-800 text-xs font-medium rounded-md hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors cursor-default"
+                        >
+                          {tech}
+                        </span>
+                      ),
+                  )}
                 </div>
               </div>
             </motion.div>

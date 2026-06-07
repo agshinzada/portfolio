@@ -84,7 +84,7 @@ const Contact = () => {
                   </div>
                 </a>
 
-                <a
+                {/* <a
                   href="https://wa.me/994703504750"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -98,7 +98,7 @@ const Contact = () => {
                       WhatsApp
                     </p>
                   </div>
-                </a>
+                </a> */}
 
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-slate-50 dark:bg-zinc-900 flex items-center justify-center rounded-xl text-slate-500">
